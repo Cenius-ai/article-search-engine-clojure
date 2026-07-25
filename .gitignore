@@ -1,0 +1,10 @@
+.env
+data/
+target/
+.cpcache/
+.classpath
+*.class
+*.jar
+*.war
+*.log
+.lein-*
