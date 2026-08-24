@@ -1,6 +1,7 @@
 # Article Search Engine — Clojure search engine app reference implementation
 
-**Article Search Engine** is a free, open-source search engine app built with Clojure. A minimal Clojure web application using Ring and Compojure that allows visitors to search a list of articles by keyword, backed by PostgreSQL. Run it locally, deploy it as a self-hosted search engine app, or [remix it on cenius.ai](https://cenius.ai/marketplace/p/article-search-engine?ref=gh&utm_campaign=article-search-engine-clojure) to make it your own — the whole application (code, design, seeded demo data) ships in this repository under the Apache-2.0 license.
+This repository contains the complete source for **Article Search Engine**, an open-source search engine app built with Clojure. A minimal Clojure web application using Ring and Compojure that allows visitors to search a list of articles by keyword, backed by PostgreSQL. Everything Article Search Engine needs to run is here — code, seed data, install scripts. Apache-2.0-licensed — use Article Search Engine commercially, self-host it, or [remix Article Search Engine on cenius.ai](https://cenius.ai/marketplace/p/article-search-engine?ref=gh&utm_campaign=article-search-engine-clojure) to make it yours.
+
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) ![Stack](https://img.shields.io/badge/Stack-Clojure-3b82f6) [![Built with cenius.ai](https://img.shields.io/badge/Built%20with-cenius.ai-8b5cf6)](https://cenius.ai)
 
@@ -16,7 +17,7 @@ _Local clone? See [Quick start](#quick-start) below. cenius.ai is the zero-setup
 
 ![Article Search Engine demo — search engine app built with Clojure](.github/media/hero_flagship.gif)
 
-▶ **[Watch the full demo video](https://cenius.ai/marketplace/p/article-search-engine?ref=gh&utm_campaign=article-search-engine-clojure)** — the complete walkthrough, playing on the project's cenius.ai page · [MP4 file](.github/media/demo.mp4)
+📽 **[Demo video on cenius.ai](https://cenius.ai/marketplace/p/article-search-engine?ref=gh&utm_campaign=article-search-engine-clojure)** — the complete run-through · [MP4](.github/media/demo.mp4)
 
 ## Screenshots
 
@@ -33,6 +34,10 @@ _Local clone? See [Quick start](#quick-start) below. cenius.ai is the zero-setup
 ```
 
 See [`INSTALL.md`](INSTALL.md) for full setup and usage instructions.
+
+## Architecture
+
+Clojure project, delivered as a complete runnable codebase (29 files). Top-level layout: `data/`, `resources/`, `src/`, `test/`. `install.sh` wires up dependencies and loads seed records; after it runs the app has real data to show. Full setup details: [`INSTALL.md`](INSTALL.md).
 
 ## Usage guide
 
@@ -88,31 +93,27 @@ Returns:
 
 _Full guide: [`USAGE.md`](USAGE.md)_
 
-## Architecture
-
-Clojure application, delivered as a complete, runnable project (29 files). Top-level layout: `data/`, `resources/`, `src/`, `test/`. `install.sh` provisions dependencies and seeds demo data, so the app boots with something to show. Setup details live in [`INSTALL.md`](INSTALL.md).
-
 ## FAQ
 
-### How do I self-host Article Search Engine?
+### Can I deploy Article Search Engine on my own infrastructure?
 
 Clone this repository and run `./install.sh`, then start the app as described in [`INSTALL.md`](INSTALL.md). Article Search Engine is fully self-hostable — no external services are required to try it.
 
-### What is Article Search Engine built with?
-
-Clojure. The full source in this repository is exactly what the app runs. Highlights include keyword article search.
-
 ### Can I use Article Search Engine in a commercial project?
 
-Yes. The code is Apache-2.0-licensed — use it, modify it, and ship it commercially. See [LICENSE](LICENSE).
+Confirmed free for commercial use — MIT terms let you incorporate, resell, or ship it in any product. [LICENSE](LICENSE).
 
-### How do I make Article Search Engine my own brand?
+### How do I customise Article Search Engine's branding?
 
-Absolutely. [Open it on cenius.ai](https://cenius.ai/marketplace/p/article-search-engine?ref=gh&utm_campaign=article-search-engine-clojure) and remix it there — platform modifications come with full rebrand and relicense rights over your derivative, so the result is entirely yours.
+Yes. The MIT license lets you remove the original branding and ship under your own name. For a guided approach, [remix it on cenius.ai](https://cenius.ai/marketplace/p/article-search-engine?ref=gh&utm_campaign=article-search-engine-clojure): you get a fresh build with full rebrand and relicense rights.
 
-### Can I change Article Search Engine without writing code?
+### Can non-developers customise Article Search Engine?
 
 Open it on [cenius.ai](https://cenius.ai/marketplace/p/article-search-engine?ref=gh&utm_campaign=article-search-engine-clojure) and describe the changes you want in plain English — the platform modifies the app and gives you a new, downloadable build.
+
+### Which framework or language does Article Search Engine use?
+
+Clojure. The full source in this repository is exactly what the app runs. Highlights include keyword article search.
 
 ## License & rebranding
 
